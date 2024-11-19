@@ -4,17 +4,13 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void printGCD(int n, int m) {
-        int maxNum;
-        if (n>m)
-            maxNum = n;
-        else
-            maxNum = m;
+        int minNum = Math.min(n, m);
         while(true){
-            if(n%maxNum==0 && m%maxNum==0)
+            if(n%minNum==0 && m%minNum==0)
                 break;
-            maxNum--;
+            minNum --;
         }
-        System.out.print(maxNum);
+        System.out.print(minNum);
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
