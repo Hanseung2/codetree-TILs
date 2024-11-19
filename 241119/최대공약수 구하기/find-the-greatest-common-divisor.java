@@ -1,23 +1,22 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class Main {    
-    // n과 m의 최대공약수를 출력합니다.
-    public static void findGcd(int n, int m) {
-        int gcd = 0;
-        for(int i = 1; i <= Math.min(n, m); i++) {
-            if(n % i == 0 && m % i == 0)
-                gcd = i;
+public class Main {
+    public static void printGCD(int n, int m) {
+        int minNum = Math.min(n, m);
+        while(true){
+            if(n%minNum==0 && m%minNum==0)
+                break;
+            minNum --;
         }
-    
-        System.out.print(gcd);
+        System.out.print(minNum);
     }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // 변수 선언 및 입력:
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-
-        findGcd(n, m);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] input = br.readLine().split(" ");
+        int n = Integer.parseInt(input[0]);
+        int m = Integer.parseInt(input[1]);
+        printGCD(n,m);
     }
 }
