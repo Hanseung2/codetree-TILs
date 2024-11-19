@@ -7,13 +7,14 @@ public class Main {
         int maxNum = Math.max(n, m);
         int minNum = Math.min(n, m);
         int cnt = 2;
+        int result = maxNum;
         while(true){
-            if(maxNum%minNum == 0)
+            if(result%minNum == 0)
                 break;
-            maxNum = maxNum*cnt;
+            result = maxNum*cnt;
             cnt++;
         }
-        System.out.println(maxNum);
+        System.out.println(result);
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
