@@ -25,8 +25,8 @@ public class Main {
 
 
         String[] input = br.readLine().split(" ");
-        int n = Integer.parseInt(input[0]); // 수열 A의 크기
-        int m = Integer.parseInt(input[1]); // m번째 원소
+        int n = Integer.parseInt(input[0]);
+        int m = Integer.parseInt(input[1]);
         
         String[] inputA = br.readLine().split(" ");
         int[] A = new int[n];
