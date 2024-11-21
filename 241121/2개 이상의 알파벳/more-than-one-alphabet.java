@@ -15,8 +15,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
         if(isDoubleAlphabet(input))
-            System.out.println("YES");
+            System.out.println("Yes");
         else
-            System.out.println("NO");
+            System.out.println("No");
     }
 }
