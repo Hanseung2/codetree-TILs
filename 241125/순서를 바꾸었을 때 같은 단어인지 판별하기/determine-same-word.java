@@ -21,10 +21,10 @@ public class Main {
             }
         }
         if(flag) {
-            System.out.println("No");
+            System.out.print("No");
         }
         else {
-            System.out.println("Yes");
+            System.out.print("Yes");
         }
     }
 }
