@@ -13,18 +13,8 @@ public class Main {
         Arrays.sort(a);
         Arrays.sort(b);
 
-        boolean flag = false;
-        for (int i = 0; i < a.length; i++) {
-            if(a[i] != b[i]) {
-                flag = true;
-                break;
-            }
-        }
-        if(flag) {
-            System.out.print("No");
-        }
-        else {
-            System.out.print("Yes");
-        }
+        if(a.equals(b))
+            System.out.println("Yes");
+        else System.out.println("No");
     }
 }
