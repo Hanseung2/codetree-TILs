@@ -12,8 +12,10 @@ public class Main {
         char[] b = br.readLine().toCharArray();
         Arrays.sort(a);
         Arrays.sort(b);
+        String sortedA = new String(a);
+        String sortedB = new String(b);
 
-        if(a.equals(b))
+        if(sortedA.equals(sortedB))
             System.out.println("Yes");
         else System.out.println("No");
     }
