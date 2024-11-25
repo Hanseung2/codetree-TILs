@@ -10,7 +10,6 @@ public class Main {
     {
         int index = (idx+1)/2;
         Arrays.sort(arr,0,idx+1);
-        System.out.println(Arrays.toString(arr));
         return arr[index];
     }
     public static void main(String[] args) throws IOException {
